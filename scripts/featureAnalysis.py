@@ -4,7 +4,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-features= pd.read_csv("DataSets/50_kicks/linear_acceleration/full_dataset.csv")
+features= pd.read_csv("../DataSets/50_kicks/linear_acceleration/full_dataset.csv")
 
 classes = ["Y","A","P","S"]
 

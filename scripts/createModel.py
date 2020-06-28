@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, plot_confusion_matrix
 
 # Data load and split
-data = pd.read_csv("DataSets/50_kicks/linear_acceleration/full_dataset.csv")
+data = pd.read_csv("../DataSets/50_kicks/linear_acceleration/full_dataset.csv")
 
 # Normalize input
 input_to_normalize = data.iloc[:, 4:-1]
@@ -95,10 +95,10 @@ while True:
             # plt.show()
             plt.savefig("plots/bestModel.png")
 
-            joblib.dump(scaler, 'models/scaler.pkl')
+            joblib.dump(scaler, '../models/scaler.pkl')
 
             model_json = model.to_json()
-            with open("models/model.json", "w") as json_file:
+            with open("../models/model.json", "w") as json_file:
                 json_file.write(model_json)
             # serialize weights to HDF5
             model.save_weights("models/model.h5")
