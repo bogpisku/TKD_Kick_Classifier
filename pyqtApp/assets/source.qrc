@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="prefijoNuevo">
+    <file>pi-chagi.jpg</file>
+    <file>yeop-chagi.jpg</file>
+    <file>ap-chagi.jpg</file>
+  </qresource>
+</RCC>
